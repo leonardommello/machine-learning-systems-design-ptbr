@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Machine Learning Systems Design — tradução PT-BR"
+  description: "Projeto de tradução para português do Brasil do booklet de Chip Huyen"
+  search: true
+  page-navigation: true
+  repo-url: https://github.com/leonardommello/machine-learning-systems-design-ptbr
+  repo-actions: [source, issue]
+  navbar:
+    left:
+      - href: index.qmd
+        text: Início
+      - href: ESTADO-DA-TRADUCAO.md
+        text: Estado da tradução
+      - href: GLOSSARIO.md
+        text: Glossário
+    right:
+      - icon: github
+        href: https://github.com/leonardommello/machine-learning-systems-design-ptbr
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - ESTADO-DA-TRADUCAO.md
+      - GLOSSARIO.md
+  page-footer:
+    left: |
+      Booklet original © Chip Huyen. Todos os direitos reservados.
+    right: |
+      Projeto de tradução não oficial mantido pela comunidade.
+
+lang: pt
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/theme.scss]
+      dark: [darkly, assets/theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    toc-title: "Nesta página"
+    link-external-newwindow: true
+
+execute:
+  enabled: false
+  freeze: true

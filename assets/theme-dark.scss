@@ -1,0 +1,71 @@
+/*-- scss:defaults --*/
+
+// Tema escuro. Mesmas medidas do tema claro; só a paleta muda, para que
+// alternar entre os dois não desloque o texto.
+
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "Cascadia Code", ui-monospace, "SF Mono", Menlo, monospace !default;
+
+$font-size-root: 17px !default;
+$line-height-base: 1.65 !default;
+
+$body-color: #d5dae0 !default;
+$body-bg: #14181d !default;
+$link-color: #6cb6ff !default;
+
+$code-bg: #1c2129 !default;
+$code-color: #f2879b !default;
+
+$border-color: #2c333c !default;
+
+/*-- scss:rules --*/
+
+main.content {
+  max-width: 52rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+
+.cell-output pre {
+  background-color: #171c22;
+  border-left: 3px solid #3d4650;
+  font-size: 0.86em;
+}
+
+div.sourceCode {
+  border: 1px solid $border-color;
+  border-radius: 6px;
+}
+
+.table-responsive,
+main.content > table,
+.cell-output-display > table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// As figuras do livro têm fundo branco; sem isso elas queimam a vista
+// contra o fundo escuro.
+main.content img {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+table td code {
+  white-space: nowrap;
+}

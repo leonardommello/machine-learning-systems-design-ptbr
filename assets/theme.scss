@@ -1,0 +1,69 @@
+/*-- scss:defaults --*/
+
+// Tema claro. Tipografia com foco em leitura longa de prosa técnica
+// intercalada com blocos de código.
+
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "Cascadia Code", ui-monospace, "SF Mono", Menlo, monospace !default;
+
+$font-size-root: 17px !default;
+$line-height-base: 1.65 !default;
+
+$body-color: #1f2328 !default;
+$body-bg: #ffffff !default;
+$link-color: #0b5cad !default;
+
+$code-bg: #f6f8fa !default;
+$code-color: #b0355c !default;
+
+$border-color: #d8dee4 !default;
+
+/*-- scss:rules --*/
+
+// Prosa mais estreita que o padrão: linhas longas cansam em texto técnico.
+main.content {
+  max-width: 52rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+
+// Saídas de célula precisam se distinguir do código de entrada.
+.cell-output pre {
+  background-color: #fbfbfb;
+  border-left: 3px solid #c7ced6;
+  font-size: 0.86em;
+}
+
+div.sourceCode {
+  border: 1px solid $border-color;
+  border-radius: 6px;
+}
+
+// Tabelas largas rolam em vez de estourar a página.
+.table-responsive,
+main.content > table,
+.cell-output-display > table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// O glossário é consultado, não lido: linhas compactas ajudam a varredura.
+#glossario-de-traducao-pt-br + * table td,
+table td code {
+  white-space: nowrap;
+}

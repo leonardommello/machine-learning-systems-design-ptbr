@@ -1,0 +1,51 @@
+---
+title: "Machine Learning Systems Design — tradução PT-BR"
+subtitle: "Projeto de tradução para português do Brasil"
+---
+
+Este é o site do **projeto de tradução** do booklet
+[*Machine Learning Systems Design*](https://huyenchip.com/machine-learning-systems-design/toc.html),
+de Chip Huyen — um guia curto sobre as quatro etapas de projetar um sistema de
+aprendizado de máquina (definição do projeto, pipeline de dados, modelagem e
+disponibilização em produção), fechado com 27 questões abertas de entrevista.
+
+::: {.callout-important}
+## O texto traduzido não é publicado aqui
+
+O booklet é obra de Chip Huyen, sem licença aberta. A tradução para o português do
+Brasil é feita **dentro do repositório da autora**, em `Translation/Portuguese-BR/`,
+seguindo o mesmo formato da tradução para o farsi que já foi aceita lá — e é submetida
+a ela por pull request.
+
+Este site não republica a obra. Ele existe para documentar o projeto: o que já foi
+traduzido, quais critérios de terminologia estão em uso e como contribuir.
+
+Leia o original em [huyenchip.com](https://huyenchip.com/machine-learning-systems-design/toc.html).
+:::
+
+## Como acompanhar
+
+| Página | Conteúdo |
+|---|---|
+| [Estado da tradução](ESTADO-DA-TRADUCAO.md) | O que já foi traduzido, o que falta e onde está o pull request |
+| [Glossário](GLOSSARIO.md) | Terminologia canônica usada na tradução |
+
+## Como contribuir
+
+1. Leia o [glossário](GLOSSARIO.md) — ele decide os termos em caso de dúvida.
+2. Escolha um arquivo ainda pendente no [estado da tradução](ESTADO-DA-TRADUCAO.md).
+3. Traduza em `Translation/Portuguese-BR/`, espelhando o caminho do arquivo original.
+4. Abra um pull request. Revisão de tradução é bem-vinda tanto quanto tradução nova.
+
+O que se traduz é a prosa. Nomes de empresas, produtos, ferramentas, artigos e
+benchmarks permanecem em inglês.
+
+## Créditos
+
+Booklet original © Chip Huyen. Repositório original:
+[chiphuyen/machine-learning-systems-design](https://github.com/chiphuyen/machine-learning-systems-design).
+
+A autora escreveu depois um livro mais completo e atual sobre o mesmo assunto,
+*Designing Machine Learning Systems* (O'Reilly, 2022), com
+[edição oficial em português](https://altabooks.com.br/produto/projetando-sistemas-de-machine-learning/)
+publicada pela Alta Books.

@@ -1,0 +1,61 @@
+name: Publicar site
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "**.ipynb"
+      - "**.md"
+      - "**.qmd"
+      - "_quarto.yml"
+      - "assets/**"
+      - ".github/workflows/publish-site.yml"
+  workflow_dispatch:
+
+# Um deploy por vez; um push novo cancela um build que ainda esteja em andamento.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.6.40
+
+      # Os notebooks são renderizados a partir das saídas já gravadas
+      # (execute.enabled: false), então o CI não precisa de Python,
+      # de GPU nem de baixar pesos de modelos.
+      - name: Renderizar site
+        run: quarto render --to html
+
+      - name: Verificar que o site não saiu vazio
+        run: |
+          test -f _site/index.html || { echo "index.html não foi gerado"; exit 1; }
+          count=$(find _site -name '*.html' | wc -l)
+          echo "páginas HTML geradas: $count"
+          test "$count" -ge 3 || { echo "esperava ao menos 3 páginas, gerou $count"; exit 1; }
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
