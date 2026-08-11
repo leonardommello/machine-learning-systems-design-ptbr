@@ -7,7 +7,8 @@ Acompanhamento do que já foi traduzido para o português do Brasil. A traduçã
 [chiphuyen/machine-learning-systems-design](https://github.com/chiphuyen/machine-learning-systems-design),
 seguindo o formato da tradução para o farsi já aceita no repositório.
 
-**Pull request:** ainda não aberto.
+**Autorização:** pedida à autora em [chiphuyen/machine-learning-systems-design#20](https://github.com/chiphuyen/machine-learning-systems-design/issues/20).
+O pull request só é aberto depois da resposta dela.
 
 ---
 
