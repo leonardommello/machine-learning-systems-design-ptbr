@@ -3,12 +3,14 @@
 Acompanhamento do que já foi traduzido para o português do Brasil. A tradução fica em
 `Translation/Portuguese-BR/`, espelhando o caminho de cada arquivo original.
 
-**Rota de publicação:** pull request para
-[chiphuyen/machine-learning-systems-design](https://github.com/chiphuyen/machine-learning-systems-design),
-seguindo o formato da tradução para o farsi já aceita no repositório.
+**Onde a tradução vive:** apenas neste repositório, em
+`Translation/Portuguese-BR/`, no formato usado pela tradução para o farsi no
+repositório da autora.
 
-**Autorização:** pedida à autora em [chiphuyen/machine-learning-systems-design#20](https://github.com/chiphuyen/machine-learning-systems-design/issues/20).
-O pull request só é aberto depois da resposta dela.
+**Nada é enviado para o repositório dela.** Não há pull request aberto nem
+planejado. O booklet é obra de Chip Huyen e continua sendo lido no
+[site dela](https://huyenchip.com/machine-learning-systems-design/toc.html);
+o site deste repositório publica só as páginas do projeto de tradução.
 
 ---
 

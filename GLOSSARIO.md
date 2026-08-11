@@ -155,8 +155,8 @@ inglês por ser o nome pelo qual o booklet é conhecido.
 ## 5. Escopo
 
 A tradução vive em `Translation/Portuguese-BR/`, espelhando os caminhos dos arquivos
-originais, e é submetida à autora por pull request — mesmo formato da tradução para o
-farsi já aceita no repositório original.
+originais, no mesmo formato da tradução para o farsi no repositório da autora. Ela não
+é enviada para lá.
 
 O site deste repositório **não republica a obra**: publica apenas o estado do projeto,
 este glossário e a orientação para contribuir. O booklet original é de Chip Huyen e
