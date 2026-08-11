@@ -42,6 +42,8 @@ documento, expandir em português e manter a sigla entre parênteses — por exe
 
 | Inglês | Português | Observação |
 |---|---|---|
+| machine learning (ML) | machine learning | mantido em inglês; é a forma usada no mercado brasileiro e no título da edição oficial da Alta Books |
+| MLOps | MLOps | manter |
 | AI engineering | engenharia de IA | |
 | foundation model | modelo de fundação | |
 | large language model (LLM) | modelo de linguagem de grande porte (LLM) | sigla mantida |

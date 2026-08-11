@@ -1,6 +1,14 @@
 project:
   type: website
   output-dir: _site
+  # Sem esta lista, o Quarto renderiza todo markdown do repositório — o que
+  # publicaria o booklet inteiro, em inglês e traduzido. A obra é da autora e
+  # não tem licença aberta: ela pertence ao repositório dela, não a um espelho.
+  # O site publica apenas as páginas do projeto de tradução.
+  render:
+    - index.qmd
+    - ESTADO-DA-TRADUCAO.md
+    - GLOSSARIO.md
 
 website:
   title: "Machine Learning Systems Design — tradução PT-BR"
