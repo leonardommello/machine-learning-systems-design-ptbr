@@ -26,13 +26,23 @@ o site deste repositório publica só as páginas do projeto de tradução.
 
 ## Respostas da comunidade
 
-As 27 respostas em `answers/` são contribuições de terceiros ao repositório original.
-Serão traduzidas depois do conteúdo principal, preservando a atribuição de cada
-contribuidor.
+Os 27 arquivos em `answers/` são o espaço reservado para as contribuições da
+comunidade ao repositório original. No estado atual, todos são **gabaritos vazios**:
+trazem o título, o enunciado da questão e a seção `**Answer**` sem conteúdo. Nenhum
+deles credita um contribuidor — não há atribuição a preservar até que alguém escreva
+uma resposta lá.
+
+A tradução reproduz exatamente essa condição: o mesmo gabarito em português, com o
+enunciado idêntico ao de `content/exercises.md` e a seção `**Resposta**` vazia. Nada
+foi inventado.
 
 | Arquivos | Tradução | Estado |
 |---|---|---|
-| `answers/q1.md` … `answers/q27.md` | `Translation/Portuguese-BR/answers/` | pendente |
+| `answers/q1.md` … `answers/q27.md` | `Translation/Portuguese-BR/answers/` | traduzido (gabaritos vazios) |
+
+Se o repositório original receber respostas de verdade, elas devem ser traduzidas
+preservando integralmente a atribuição de cada contribuidor — nome, usuário do GitHub
+e links de perfil.
 
 ---
 
